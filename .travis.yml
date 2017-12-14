@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: dAPM36NYh0XBhLjVpo70ONg0Y6G7eLHg0ipC++zA2kg1eWqTXt56Svzf8wovJq7gDVmbcnDhdED8/jaf8wUxnHYz2xYL4UWq8C6Q3+Rs/HlN6VUh3QCnwTGJHdkQ/L5AJ0NCouQhPbEjT1DdHTCFf+5jZyP/g6HrDmyCrSLf+ksn/UjWTQwKr0YkcSbRb7mPe231kdPIK8vjY/cfwsavdr4REF6XJ3yQ4WVDDq9r4uI/Yttuhz0ez2+NP8Er/Pw3KYph/mvbUTzowKsWdFCGphceNH3jk9maGZp5+dItpG2+6SE9A+hAdGlVFnFkb0l32o/vokH0MWKhJPALu7F7q0Cdua/8WMLQsOJC+6AjNQWhBAIRwJHlED5WYiujjSPMd4Bv7IJGjghZyS8snOzoeygqu+cjRw/1zzyUtj90HBGt7xUbzGJ/0lrPD6TCeZLo6sRLxGN+bIPQdBTyqdxBmx2J1ci2vLYtuV2I3VimWzKQvy/cW2cmsv3jLIef4wgkoneTZsLoBNHmGzLCCDIIhAgKf3Pz91IT6J4WX8Hoz0U8GZbeQhbF1dJ8TMNPx3GN82Bjp/VMsb0mJHnubsAO9I8t54FBeUoEd4eV0T4xIMXsvwDSjuPirmpRaqWb3kewV8Xeq5ktiytzXhXieW22TpFwG5Ox+YkUlw5DWLmyj4I=
+  app: young-spire-39140
+  on:
+    repo: sgarcia30/travisCI-restaurant-app
+    branch: feature/with-tests
